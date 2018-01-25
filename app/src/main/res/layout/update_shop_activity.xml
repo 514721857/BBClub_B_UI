@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bbc.bbclub.b.shop.ShopInfoActivity">
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+
+    <com.bbc.bbclub.b.util.AutoCardView
+        android:layout_below="@+id/framelayout_top"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:layout_marginTop="@dimen/view_margin_60"
+        android:background="@color/login_withe"
+        card_view:cardElevation="@dimen/view_elevation_10">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_button_90"
+
+                android:paddingRight="@dimen/view_margin_30">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_name"
+                    android:textColor="@color/main_tip_color"
+                    android:textSize="@dimen/text_button_30"/>
+
+
+                <EditText
+                    android:id="@+id/et_verify_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/view_margin_15"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="店铺名"
+                    android:maxLines="1"
+                    android:textColorHint="@color/main_tip_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_button_30" />
+
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_button_90"
+                android:id="@+id/update_shop_rel_address"
+                android:paddingRight="@dimen/view_margin_30">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_adress"
+                    android:textColor="@color/main_tip_color"
+                    android:textSize="@dimen/text_button_30"/>
+
+
+
+                <TextView
+                    android:text="广州荔湾区芳村比比车"
+                    android:id="@+id/text_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/view_margin_15"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:textColor="@color/main_tip_color"
+                    android:textSize="@dimen/text_button_30" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_button_90"
+                android:id="@+id/update_shop_rel_shenfen"
+                android:paddingRight="@dimen/view_margin_30">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_person"
+                    android:textColor="@color/main_tip_color"
+                    android:textSize="@dimen/text_button_30"/>
+
+                <TextView
+                    android:text="已认证"
+                    android:id="@+id/text_accuracy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/view_margin_15"
+
+                    android:gravity="right"
+                    android:textColor="@color/login_verify_text"
+                    android:textSize="@dimen/text_button_30" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_button_90"
+                android:id="@+id/update_shop_rel_card"
+                android:paddingRight="@dimen/view_margin_30">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_card"
+                    android:textColor="@color/main_tip_color"
+                    android:textSize="@dimen/text_button_30"/>
+
+                <!--       <ImageView
+                           android:layout_marginRight="@dimen/view_margin_15"
+                           android:id="@+id/iv_right_battery"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                           android:src="@mipmap/ico_next"/>-->
+
+
+                <TextView
+                    android:id="@+id/text_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/view_margin_15"
+                    android:drawableRight="@mipmap/right"
+                    android:drawablePadding="@dimen/view_margin_15"
+
+                    android:gravity="right"
+                    android:text="未添加"
+                    android:textColor="@color/login_verify_text"
+                    android:textSize="@dimen/text_button_30" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <include layout="@layout/line"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/update_shop_rel_zhizhao"
+                android:layout_height="@dimen/view_button_90"
+                android:paddingRight="@dimen/view_margin_30">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_zhizhao"
+                    android:textColor="@color/main_tip_color"
+                    android:textSize="@dimen/text_button_30"/>
+
+
+                <TextView
+
+                    android:id="@+id/text_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/view_margin_15"
+                    android:text="审核中"
+                    android:gravity="right"
+                    android:textColor="@color/login_verify_text"
+                    android:textSize="@dimen/text_button_30" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.bbc.bbclub.b.util.AutoCardView>
+
+
+    <com.bbc.bbclub.b.util.AutoCardView
+
+        android:layout_below="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:layout_marginTop="@dimen/view_margin_30"
+        android:background="@color/login_withe"
+        card_view:cardElevation="@dimen/view_elevation_10">
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/view_margin_30"
+            android:layout_toRightOf="@+id/profile_image"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/main_shop_tip"
+            android:textColor="@color/main_tip_color"
+            android:textScaleX="1.1"
+            android:textSize="@dimen/text_button_30" />
+
+
+    </com.bbc.bbclub.b.util.AutoCardView>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_button_90"
+        android:layout_marginRight="@dimen/view_margin_60"
+        android:layout_marginLeft="@dimen/view_margin_60"
+        android:layout_marginBottom="@dimen/view_margin_60"
+        android:background="@drawable/login_btn_select"
+        android:gravity="center"
+        android:text="@string/shop_save"
+        android:textColor="@color/login_withe"
+        android:textSize="@dimen/text_text_35" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

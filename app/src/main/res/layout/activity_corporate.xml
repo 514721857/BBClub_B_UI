@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.bbc.bbclub.b.shop.ShopInfoActivity">
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+
+    <com.bbc.bbclub.b.util.AutoCardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/framelayout_top"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:layout_marginTop="@dimen/view_margin_60"
+        android:background="@color/login_withe"
+        card_view:cardElevation="@dimen/view_elevation_10">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                >
+
+                <Button
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:layout_marginRight="@dimen/view_margin_15"
+                    android:layout_marginTop="@dimen/view_margin_15"
+                    android:layout_marginBottom="@dimen/view_margin_15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/img_btn_select"
+                    android:gravity="center"
+                    android:text="@string/shop_select_img"
+                    android:textColor="@color/login_verify_text"
+                    android:textSize="@dimen/text_button_30" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <include layout="@layout/line" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_button_90"
+
+                android:paddingRight="@dimen/view_margin_30">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_person_name"
+                    android:textColor="@color/shop_title_text"
+                    android:textSize="@dimen/text_button_30" />
+
+
+                <EditText
+                    android:id="@+id/et_verify_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="法人姓名"
+                    android:textColor="@color/shop_text"
+                    android:maxLines="1"
+                    android:textColorHint="@color/main_tip_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_button_30" />
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/update_shop_rel_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_button_90"
+                android:paddingRight="@dimen/view_margin_30">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_person_no"
+                    android:textColor="@color/shop_title_text"
+                    android:textSize="@dimen/text_button_30" />
+
+
+                <EditText
+                    android:id="@+id/et_verify_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="4643458341856"
+                    android:maxLines="1"
+                    android:textColor="@color/shop_text"
+                    android:textColorHint="@color/main_tip_color"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_button_30" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <include layout="@layout/line" />
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_button_90"
+
+                android:paddingRight="@dimen/view_margin_30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:text="@string/shop_person_tip"
+                    android:textColor="@color/shop_tip"
+                    android:textSize="@dimen/text_button_30" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.bbc.bbclub.b.util.AutoCardView>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_button_90"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/view_margin_60"
+        android:layout_marginLeft="@dimen/view_margin_60"
+        android:layout_marginRight="@dimen/view_margin_60"
+        android:background="@drawable/login_btn_select"
+        android:gravity="center"
+        android:text="@string/shop_comfirm_up"
+        android:textColor="@color/login_withe"
+        android:textSize="@dimen/text_text_35" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

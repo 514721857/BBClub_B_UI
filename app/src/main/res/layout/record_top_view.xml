@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/view_button_90"
+    android:orientation="vertical" >
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/view_button_90"
+        android:background="@color/colorPrimary" >
+
+
+
+        <TextView
+            android:drawableRight="@drawable/down"
+            android:drawablePadding="@dimen/view_margin_15"
+            android:text="titles"
+            android:id="@+id/top_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/login_verify_text"
+            android:textSize="@dimen/text_text_35" />
+
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

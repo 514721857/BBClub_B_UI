@@ -1,0 +1,22 @@
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bbc.bbclub.b.fragment.RecordFragment">
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/framelayout_top"
+        android:id="@+id/flight_rv_list"
+        android:layout_marginTop="@dimen/view_margin_15"
+        android:layout_marginLeft="@dimen/view_margin_15"
+        android:layout_marginRight="@dimen/view_margin_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

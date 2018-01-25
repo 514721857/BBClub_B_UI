@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/login_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+
+    <ImageView
+        android:layout_below="@+id/framelayout_top"
+        android:id="@+id/img_logo"
+        android:layout_width="344px"
+        android:layout_height="427px"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_margin_30"
+        android:src="@mipmap/logo" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:id="@+id/et_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="90px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="60px"
+            android:background="@null"
+            android:ems="14"
+            android:hint="@string/mobile_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingLeft="30px"
+            android:textColorHint="@color/login_text"
+            android:textCursorDrawable="@null"
+            android:textSize="35px" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/login_line_no" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="@dimen/view_margin_60"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_verify_code"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/verify_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:paddingLeft="30px"
+                android:textColorHint="@color/login_text"
+                android:textCursorDrawable="@null"
+                android:textSize="35px" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/login_line_no" />
+
+            <Button
+                android:id="@+id/btn_get_verify_code_again"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:text="@string/get_vetify_code"
+                android:textColor="@color/colorAccent"
+                android:textSize="35px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="@color/login_line_no" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginBottom="@dimen/view_margin_60"
+        android:background="@drawable/login_btn_select"
+        android:gravity="center"
+        android:text="@string/login_b"
+        android:textColor="@color/login_withe"
+        android:textSize="35px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
+
+

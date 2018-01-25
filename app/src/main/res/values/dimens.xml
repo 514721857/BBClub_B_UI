@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 控件的间距. -->
+    <dimen name="view_margin_15">15px</dimen>
+    <dimen name="view_margin_30">30px</dimen>
+    <dimen name="view_margin_60">60px</dimen>
+
+
+    <!-- 控件的宽高. -->
+    <dimen name="view_button_90">90px</dimen>
+    <dimen name="view_text_60">60px</dimen>
+    <dimen name="view_layout_120">120px</dimen>
+    <dimen name="view_layout_150">150px</dimen>
+
+    <!-- y阴影的像素. -->
+    <dimen name="view_elevation_10">5px</dimen>
+
+    <!-- 字体的大小. -->
+    <dimen name="text_button_30">35px</dimen>
+    <dimen name="text_text_35">40px</dimen>
+    <dimen name="text_layout_40">40px</dimen>
+
+
+
+
+</resources>

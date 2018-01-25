@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#fafafa</color>
+    <color name="colorAccent">#FF7F18</color>
+
+    <color name="login_bg">#fafafa</color>
+    <color name="login_text">#999999</color>
+    <color name="login_verify_text">#FF7F18</color>
+    <color name="login_line_select">#FF4081</color>
+    <color name="login_line_no">#999999</color>
+    <color name="login_withe">#ffffff</color>
+
+    <color name="main_text">#999999</color>
+    <color name="main_text_select">#FF7F18</color>
+    <color name="main_tip_color">#666666</color>
+
+
+
+
+
+    <drawable name="img_selected">#d7d7d7</drawable>
+    <drawable name="img_defaul">#fafafa</drawable>
+
+    <drawable name="img_selecteds">#d7d7d7</drawable>
+    <drawable name="img_defauls">#FF7F18</drawable>
+
+    <color name="line_color">#d7d7d7</color>
+
+    <color name="shop_title_text">#999999</color>
+    <color name="shop_text">#333333</color>
+    <color name="shop_tip">#666666</color>
+
+
+
+    <color name="account_time_text">#FF7F18</color>
+    <color name="account_month_grey">#CBCBCB</color>
+    <color name="account_month_orgine">#FFE2CB</color>
+    <color name="scan_success_text">#69da9e</color>
+    <color name="account_step_red">#FF3A3A</color>
+    <color name="account_step_gray">#DCDCDC</color>
+
+    <!--
+        日历选择框颜色
+        -->
+    <color name="c_accent">#FF7F18</color>
+    <color name="floating_action_button_bg">@color/c_accent</color>
+
+
+</resources>
